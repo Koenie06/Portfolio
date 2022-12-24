@@ -1,0 +1,90 @@
+.wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  .home-section {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .home-content {
+    user-select: none;
+    cursor: default;
+    width: 100%;
+    color: whitesmoke;
+    text-align: left;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .heading {
+    font-size: 80px !important;
+  }
+  
+  .heading-name {
+    font-size: 100px !important;
+  }
+
+  .heading-type {
+    margin-top: 50px !important;
+  }
+  
+  .main-name {
+    color: #465fdd;
+  }
+  
+  .Typewriter__wrapper {
+    font-size: 65px !important;
+    color: #556de7 !important;
+    font-weight: 1000 !important;
+  }
+  .Typewriter__cursor {
+    font-size: 65px !important;
+    color: #5d72db !important;
+  }
+  
+  @media (max-width: 767px) {
+    .Typewriter__wrapper {
+      font-size: 1.4em !important;
+      font-weight: 500 !important;
+      position: absolute !important;
+    }
+    .Typewriter__cursor {
+      display: none !important;
+    }
+  }
+  
