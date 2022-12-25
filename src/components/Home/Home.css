@@ -77,14 +77,22 @@
     color: #5d72db !important;
   }
   
-  @media (max-width: 767px) {
+  @media only screen and (max-width: 768px) {
     .Typewriter__wrapper {
-      font-size: 1.4em !important;
+      font-size: 2em !important;
       font-weight: 500 !important;
       position: absolute !important;
     }
     .Typewriter__cursor {
       display: none !important;
+    }
+
+    .heading {
+      font-size: 3em !important;
+    }
+    
+    .heading-name {
+      font-size: 4.2em !important;
     }
   }
   

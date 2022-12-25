@@ -63,4 +63,10 @@
     .about-img {
       padding-top: 0 !important;
     }
+    .project-heading.languages {
+      font-size: 2.3em !important;
+    }
+    .project-heading.tools {
+      font-size: 2.5em !important;
+    }
   }

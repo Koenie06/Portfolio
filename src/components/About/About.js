@@ -27,13 +27,13 @@ function About() {
             <Aboutcard />
           </Col>
         </Row>
-        <h1 className="project-heading" style={{ cursor: "default" }} > 
+        <h1 className="project-heading languages" style={{ cursor: "default" }} > 
           <strong className="blue">Coding languages</strong> I use
         </h1>
 
         <Languages />
 
-        <h1 className="project-heading" style={{ cursor: "default" }} >
+        <h1 className="project-heading tools" style={{ cursor: "default" }} >
           <strong className="blue">Tools</strong> I use
         </h1>
 
