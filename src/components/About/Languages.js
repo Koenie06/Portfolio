@@ -15,7 +15,7 @@ import {
 function Languages() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col onClick="window.location.href='https://google.com'" xs={4} md={2} className="tech-icons">
+      <Col xs={4} md={2} className="tech-icons">
         <a href="https://www.w3schools.com/js/default.asp" className="tech-href">
           <SiJavascript />
         </a>

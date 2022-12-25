@@ -18,31 +18,49 @@ function Tools() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiWindows />
+        <a href="https://www.microsoft.com/windows/" className="tech-href">
+          <SiWindows />
+        </a>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiLinux />
+        <a href="https://www.linux.org" className="tech-href">
+          <SiLinux />
+        </a>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <a href="https://code.visualstudio.com" className="tech-href">
+          <SiVisualstudiocode />
+        </a>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        <a href="https://www.postman.com" className="tech-href">
+          <SiPostman />
+        </a>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiGithub />
+        <a href="https://github.com" className="tech-href">
+          <SiGithub />
+        </a>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <a href="https://vercel.com" className="tech-href">
+          <SiVercel />
+        </a>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiHeroku />
+        <a href="https://www.heroku.com" className="tech-href">
+          <SiHeroku />
+        </a>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiDiscord />
+        <a href="https://discord.com" className="tech-href">
+          <SiDiscord />
+        </a>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiDatabase />
+        <a href="https://www.mysql.com" className="tech-href">
+          <DiDatabase />
+        </a>
       </Col>
     </Row>
   );
