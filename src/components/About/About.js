@@ -9,10 +9,10 @@ import "./About.css";
 
 function About() {
   return (
-    <Container fluid className="about-section" style={{ userSelect: "none", cursor: "default" }}>
+    <Container fluid className="about-section" style={{ userSelect: "none" }}>
       <Particle />
       <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
+        <Row style={{ justifyContent: "center", padding: "10px", cursor: "default" }}>
           <Col
             md={7}
             style={{
@@ -27,13 +27,13 @@ function About() {
             <Aboutcard />
           </Col>
         </Row>
-        <h1 className="project-heading">
+        <h1 className="project-heading" style={{ cursor: "default" }} > 
           <strong className="blue">Coding languages</strong> I use
         </h1>
 
         <Languages />
 
-        <h1 className="project-heading">
+        <h1 className="project-heading" style={{ cursor: "default" }} >
           <strong className="blue">Tools</strong> I use
         </h1>
 

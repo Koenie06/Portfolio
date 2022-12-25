@@ -35,6 +35,17 @@
     padding: 20px !important;
     line-height: 1.6 !important;
   }
+
+  .tech-href {
+    color: white !important;
+    text-decoration: none !important;
+  }
+
+  .tech-href:hover {
+    cursor: pointer;
+    color: white !important;
+    text-decoration: none !important;
+  }
   
   .quote-card-view {
     border: none !important;
