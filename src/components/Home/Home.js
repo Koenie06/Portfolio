@@ -1,49 +1,39 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
+import { Container } from "react-bootstrap";
+import About from "../About/About";
 import Type from "./Type";
-import {RemoveScrollBar} from 'react-remove-scroll-bar';
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import "./Home.css";
 
 function Home() {
   return (
     <section>
-      <RemoveScrollBar />
-      <Container fluid className="home-section">
-        <Particle />
+      <Container id="home" fluid className="home-section">
         <Container className="home-content">
-          <Row>
-            <Col className="home-header">
-              <h1 className="heading">
-                Hi there!{" "}
+            <h1 className="heading">
+                What's up?{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
-              </h1>
+            </h1>
 
-              <h1 className="heading-name">
+            <h1 className="heading-name">
                 I'm
                 <strong className="main-name"> Koen Termaat</strong>
-              </h1>
+            </h1>
 
-              <h1 className="heading-type">
+            <h1 className="heading-type">
                 <Type />
-              </h1>
-            </Col>
+            </h1>
 
-            {/* <Col md="auto" style={{ paddingBottom: 20 }}>
-              <img
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              />
-            </Col> */}
-          </Row>
+            <a href="#about">
+                <MdKeyboardDoubleArrowDown className="scroll-down" />
+            </a>
         </Container>
+        <About />
       </Container>
     </section>
   );
-}
+};
 
 export default Home;

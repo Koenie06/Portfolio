@@ -1,18 +1,18 @@
 .wave {
-    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
-    animation-duration: 2.1s; /* Change to speed up or slow down */
-    animation-iteration-count: infinite; /* Never stop waving :) */
-    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    animation-name: wave-animation;
+    animation-duration: 2.1s;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
     display: inline-block;
-  }
+}
   
-  @keyframes wave-animation {
+@keyframes wave-animation {
     0% {
       transform: rotate(0deg);
     }
     10% {
       transform: rotate(14deg);
-    } /* The following five values can be played with to make the waving more or less extreme */
+    }
     20% {
       transform: rotate(-8deg);
     }
@@ -27,57 +27,89 @@
     }
     60% {
       transform: rotate(0deg);
-    } /* Reset for the last half to pause */
+    }
     100% {
       transform: rotate(0deg);
     }
-  }
+}
 
-  .home-section {
+.home-section {
     height: 100%;
     width: 100%;
-  }
-  
-  .home-content {
+}
+
+.home-content {
     user-select: none;
     cursor: default;
     width: 100%;
+    height: 100vh;
     color: whitesmoke;
     text-align: left;
     position: relative;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-  
-  .heading {
-    font-size: 80px !important;
-  }
-  
-  .heading-name {
-    font-size: 100px !important;
-  }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 
-  .heading-type {
-    margin-top: 50px !important;
-  }
+
+.home-content .heading {
+    font-size: 3vw !important;
+    color: white;
+}
   
-  .main-name {
+.home-content .heading-name {
+    font-size: 5vw !important;
+}
+
+.heading-type {
+    margin-top: 15px !important;
+}
+
+.main-name {
     color: #465fdd;
-  }
+}
+
+.scroll-down {
+    height: 7vh;
+    width: 7vh;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 10vh;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80% {
+        transform: translateX(-50%) translateY(0);
+    }
+    40% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+    60% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+    100% {
+        transform: translateX(-50%) translateY(0); /* Pause at the end */
+    }
+}
   
-  .Typewriter__wrapper {
-    font-size: 65px !important;
+.Typewriter__wrapper {
+    font-size: 2.5vw !important;
     color: #556de7 !important;
     font-weight: 1000 !important;
-  }
-  .Typewriter__cursor {
-    font-size: 65px !important;
+}
+.Typewriter__cursor {
+    font-size: 2.5vw !important;
     color: #5d72db !important;
-  }
+}
   
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .Typewriter__wrapper {
       font-size: 2em !important;
       font-weight: 500 !important;
@@ -94,5 +126,4 @@
     .heading-name {
       font-size: 4.2em !important;
     }
-  }
-  
+}

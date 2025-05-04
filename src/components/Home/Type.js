@@ -6,20 +6,17 @@ function Type() {
     <Typewriter
       options={{
         strings: [
-          "Developer",
-          "Dutch",
-          "Gamer",
-          "Official idiot",
-          "Friend",
-          "Human",
-          "Codeman"
+            "< Web Developer />",
+            "< Full Stack Developer />",
+            "< Dutch />",
+            "< Professional Nerd />",
         ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 75,
+        deleteSpeed: 100,
       }}
     />
   );
-}
+};
 
 export default Type;

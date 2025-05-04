@@ -1,19 +1,76 @@
 .footer {
     bottom: 0 !important;
     padding-top: 10px !important;
-    padding-bottom: 8px !important ;
+    padding-bottom: 8px !important;
     background-image: var(--image-gradient);
-  }
-  .footer-copywright {
+    height: 25vh !important;
+    width: 100% !important;
+    position: relative;
+    user-select: none;
+    cursor: default;
+}
+
+.footer-copyright {
     text-align: center !important;
-  }
+}
   
-  .footer-body {
+.footer-body {
     z-index: 1;
     text-align: center !important;
-  }
+}
+
+.social-link {
+    display: inline-block !important;
+    font-size: 1.3em !important;
+    color: white;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.copied-popup {
+    position: absolute;
+    background-color: #2c2f33;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.7em;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    white-space: nowrap;
+    z-index: 999;
+    top: -35px;
+    left: 10%;
+}
+
+.quick-navigation {
+    font-size: 1.6em !important;
+}
+
+.social-icon {
+    height: 30px !important;
+    width: 30px !important;
+    margin-right: 10px !important;
+    color: white;
+}
+
+.site-icon {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.site-icon:hover {
+    color: #7289da;
+    transition: 0.3s;
+}
+
+.footer-copyright-text {
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    position: absolute;
+    bottom: 0;
+}
   
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
     .footer-copywright {
       text-align: center !important;
     }
@@ -21,16 +78,10 @@
     .footer-body {
       text-align: center !important;
     }
-  }
+}
   
-  .footer h3 {
-    font-size: 1em;
+.footer h2 {
+    font-size: 2em;
     color: white !important;
     margin-top: 0.5em !important;
-    margin-bottom: 0.5em !important;
-  }
-  .footer-icons {
-    margin-top: 0.5em !important;
-    margin-bottom: 0.5em !important;
-    padding: 0 !important;
-  }
+}

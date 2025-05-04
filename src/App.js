@@ -2,22 +2,21 @@ import React, { useState, useEffect } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar/Navbar.js";
 import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Socials from "./components/Socials/Socials";
 import Footer from "./components/Footer/Footer.js";
 import {
   BrowserRouter as Router,
   Route,
-  Routes,
-  Navigate
+  Routes
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import { Analytics } from '@vercel/analytics/react';
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Particle from "./components/Particle";
 
 function App() {
+
   const [load, updateLoad] = useState(true);
 
   useEffect(() => {
@@ -30,23 +29,21 @@ function App() {
 
   return (
     <>
-      <Router>
-        <Preloader load={load} />
-        <div className="App" id={load ? "no-scroll" : "scroll"}>
-          <Navbar />
-          <ScrollToTop />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/socials" element={<Socials />} />
-            <Route path="/about" element={<About />} />
-            <Route path="*" element={<Navigate to="/"/>} />
-          </Routes>
-          <Footer />
-        </div>
-      </Router>
-      <Analytics />
+        <Router>
+            <Preloader load={load} />
+            <div className="App" id={load ? "no-scroll" : "scroll"}>
+                <Particle />
+                <Navbar />
+                <ScrollToTop />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                </Routes>
+            </div>
+            <Footer /> 
+        </Router>
+        <Analytics />
     </>
   );
-}
+};
 
 export default App;

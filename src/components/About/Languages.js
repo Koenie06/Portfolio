@@ -11,57 +11,125 @@ import {
   SiReact,
   SiGit
 } from "react-icons/si";
+import {
+  RiStarFill,
+  RiStarHalfFill,
+  RiStarLine,
+} from "react-icons/ri";
 
 function Languages() {
-  return (
-    <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <a href="https://www.w3schools.com/js/default.asp" className="tech-href">
-          <SiJavascript />
-        </a>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <a href="https://www.w3schools.com/typescript/index.php" className="tech-href">
-          <SiTypescript />
-        </a>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <a href="https://www.w3schools.com/react/default.asp" className="tech-href">
-          <SiReact />
-        </a>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <a href="https://www.mongodb.com" className="tech-href">
-          <SiMongodb />
-        </a>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <a href="https://www.w3schools.com/mysql/default.asp" className="tech-href">
-          <SiMysql />
-        </a>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <a href="https://www.w3schools.com/python/default.asp" className="tech-href">
-          <SiPython />
-        </a>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <a href="https://www.w3schools.com/html/default.asp" className="tech-href">
-          <SiHtml5 />
-        </a>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <a href="https://www.w3schools.com/css/default.asp" className="tech-href">
-          <SiCss3 />
-        </a>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <a href="https://git-scm.com" className="tech-href">
-          <SiGit />
-        </a>
-      </Col>
-    </Row>
-  );
-}
+    return (
+        <Row className="tech-container">
+        <Col xs={4} md={2} className="tech-icons">
+            <a href="https://www.w3schools.com/js/default.asp" target="_blank" rel="noopener noreferrer" className="tech-href">
+            <SiJavascript />
+            <h5>
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarHalfFill />
+            </h5>
+            </a>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <a href="https://www.w3schools.com/typescript/index.php" target="_blank" rel="noopener noreferrer" className="tech-href">
+            <SiTypescript />
+            <h5>
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarHalfFill />
+                <RiStarLine />
+            </h5>
+            </a>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <a href="https://www.w3schools.com/react/default.asp" target="_blank" rel="noopener noreferrer" className="tech-href">
+            <SiReact />
+            <h5>
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarLine />
+            </h5>
+            </a>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <a href="https://www.mongodb.com" target="_blank" rel="noopener noreferrer" className="tech-href">
+            <SiMongodb />
+            <h5>
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarHalfFill />
+                <RiStarLine />
+                <RiStarLine />
+            </h5>
+            </a>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <a href="https://www.w3schools.com/mysql/default.asp" target="_blank" rel="noopener noreferrer" className="tech-href">
+            <SiMysql />
+            <h5>
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarLine />
+            </h5>
+            </a>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <a href="https://www.w3schools.com/python/default.asp" target="_blank" rel="noopener noreferrer" className="tech-href">
+            <SiPython />
+            <h5>
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarHalfFill />
+                <RiStarLine />
+            </h5>
+            </a>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank" rel="noopener noreferrer" className="tech-href">
+            <SiHtml5 />
+            <h5>
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarLine />
+            </h5>
+            </a>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank" rel="noopener noreferrer" className="tech-href">
+            <SiCss3 />
+            <h5>
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarLine />
+            </h5>
+            </a>
+        </Col>
+        <Col xs={4} md={2} className="tech-icons">
+            <a href="https://git-scm.com" target="_blank" rel="noopener noreferrer" className="tech-href">
+            <SiGit />
+            <h5>
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarFill />
+                <RiStarLine />
+            </h5>
+            </a>
+        </Col>
+        </Row>
+    );
+};
 
 export default Languages;
