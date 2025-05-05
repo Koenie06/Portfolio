@@ -52,14 +52,13 @@
     align-items: flex-start;
 }
 
-
 .home-content .heading {
-    font-size: 3vw !important;
+    font-size: 5rem !important;
     color: white;
 }
   
 .home-content .heading-name {
-    font-size: 5vw !important;
+    font-size: 7rem !important;
 }
 
 .heading-type {
@@ -100,30 +99,46 @@
 }
   
 .Typewriter__wrapper {
-    font-size: 2.5vw !important;
+    font-size: 4.5rem !important;
     color: #556de7 !important;
     font-weight: 1000 !important;
 }
 .Typewriter__cursor {
-    font-size: 2.5vw !important;
+    font-size: 4.5rem !important;
     color: #5d72db !important;
+}
+
+@media (max-width: 1405px) {
+    .home-content .heading {
+        font-size: 2.5rem !important;
+    }
+    .home-content .heading-name {
+        font-size: 3.5rem !important;
+    }
+    .Typewriter__wrapper {
+        font-size: 2.5rem !important;
+    }
+    .Typewriter__cursor {
+        font-size: 2.5rem !important;
+    }
 }
   
 @media only screen and (max-width: 768px) {
     .Typewriter__wrapper {
-      font-size: 2em !important;
-      font-weight: 500 !important;
-      position: absolute !important;
+        font-size: 2.5rem !important;
+        font-weight: 500 !important;
+        position: absolute !important;
     }
     .Typewriter__cursor {
-      display: none !important;
+        font-size: 2.5rem !important;
+        display: none !important;
     }
 
     .heading {
-      font-size: 3em !important;
+        font-size: 3rem !important;
     }
     
     .heading-name {
-      font-size: 4.2em !important;
+        font-size: 4.2rem !important;
     }
 }

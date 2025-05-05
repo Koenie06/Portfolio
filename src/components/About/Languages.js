@@ -19,7 +19,7 @@ import {
 
 function Languages() {
     return (
-        <Row className="tech-container">
+        <Row className="tech-container" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
         <Col xs={4} md={2} className="tech-icons">
             <a href="https://www.w3schools.com/js/default.asp" target="_blank" rel="noopener noreferrer" className="tech-href">
             <SiJavascript />

@@ -3,7 +3,7 @@
     padding-top: 10px !important;
     padding-bottom: 8px !important;
     background-image: var(--image-gradient);
-    height: 25vh !important;
+
     width: 100% !important;
     position: relative;
     user-select: none;
@@ -13,6 +13,14 @@
 .footer-copyright {
     text-align: center !important;
 }
+
+.footer-copyright:last-child {
+    margin-top: 90px;
+}
+
+.social-title {
+    font-size: 2.2rem !important;
+}
   
 .footer-body {
     z-index: 1;
@@ -21,7 +29,7 @@
 
 .social-link {
     display: inline-block !important;
-    font-size: 1.3em !important;
+    font-size: 1.2rem !important;
     color: white;
     text-decoration: none;
     margin-top: 5px;
@@ -77,6 +85,22 @@
   
     .footer-body {
       text-align: center !important;
+    }
+}
+
+@media (max-width: 1405px) {
+    .social-responsive {
+        display: none;
+    }
+    .social-icon-responsive {
+        width: 45px !important;
+        height: 45px !important;
+        margin: 5px !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    .social-title {
+        margin-bottom: 15px !important;
     }
 }
   

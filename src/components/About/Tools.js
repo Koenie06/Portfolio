@@ -21,7 +21,7 @@ import { FaFigma } from "react-icons/fa";
 
 function Tools() {
     return (
-        <Row className="tech-container">
+        <Row className="tech-container" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="100">
         <Col xs={4} md={2} className="tech-icons">
             <a href="https://www.microsoft.com/windows/" target="_blank" rel="noopener noreferrer" className="tech-href">
             <SiWindows />

@@ -18,3 +18,25 @@ html, body {
   min-height: 100%;
   margin: 0;
 }
+
+[data-aos="custom-slide-left"] {
+    opacity: 0;
+    transform: translateX(-150%);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+  
+[data-aos="custom-slide-left"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+  
+[data-aos="custom-slide-right"] {
+    opacity: 0;
+    transform: translateX(150%);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+  
+[data-aos="custom-slide-right"].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+}
