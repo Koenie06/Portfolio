@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar/Navbar.js";
 import Home from "./components/Home/Home";
-import Footer from "./components/Footer/Footer.js";
 import {
   BrowserRouter as Router,
   Route,
@@ -13,8 +12,9 @@ import { Analytics } from "@vercel/analytics/react"
 import { SpeedInsights } from "@vercel/speed-insights/react"
 import "./style.css";
 import "./App.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Particle from "./components/Particle";
+
+const Footer = lazy(() => import('./components/Footer/Footer.js'));
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       updateLoad(false);
-    }, 1200);
+    }, 100);
 
     return () => clearTimeout(timer);
   }, []);
@@ -40,7 +40,9 @@ function App() {
                     <Route path="/" element={<Home />} />
                 </Routes>
             </div>
-            <Footer /> 
+            <Suspense fallback={<div>Loading...</div>}>
+                <Footer /> 
+            </Suspense>
         </Router>
         <Analytics />
         <SpeedInsights />

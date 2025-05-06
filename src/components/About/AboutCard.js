@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import { FaGraduationCap, FaLaptopCode, FaGamepad } from "react-icons/fa";
-import "./AboutCard.css";
 
 function AboutCard() {
     return (

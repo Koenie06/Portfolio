@@ -8,7 +8,7 @@ function Github() {
 
     useEffect(() => {
         function handleWindowResize() {
-        setWindowSize(getWindowSize());
+            setWindowSize(getWindowSize());
         };
 
         window.addEventListener('resize', handleWindowResize);
@@ -34,11 +34,11 @@ function Github() {
             </div> 
         </Row>
     );
-}
+};
 
 function getWindowSize() {
-  const {innerWidth, innerHeight} = window;
-  return {innerWidth, innerHeight};
+    const {innerWidth, innerHeight} = window;
+    return {innerWidth, innerHeight};
 };
 
 export default Github;

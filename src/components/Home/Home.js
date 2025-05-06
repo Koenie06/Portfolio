@@ -1,9 +1,11 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { Container } from "react-bootstrap";
-import About from "../About/About";
 import Type from "./Type";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import "./Home.css";
+
+const About = lazy(() => import('../About/About'));
+
 
 function Home() {
   return (
@@ -30,7 +32,9 @@ function Home() {
                 <MdKeyboardDoubleArrowDown className="scroll-down" />
             </a>
         </Container>
-        <About />
+        <Suspense fallback={<></>}>
+            <About />
+        </Suspense>
       </Container>
     </section>
   );
