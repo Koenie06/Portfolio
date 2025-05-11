@@ -1,0 +1,100 @@
+.project-section {
+    position: relative !important;
+    padding-top: 150px !important;
+    padding-bottom: 30px !important;
+}
+
+.project-heading {
+    color: white !important;
+    font-size: 3.5rem !important;
+    font-weight: 500 !important;
+}
+  
+.project-card {
+    padding-top: 50px !important;
+    padding-bottom: 50px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    height: 100% !important;
+}
+
+.project-card-list {
+    border-radius: 0;
+    border-bottom: rgba(30, 28, 173, 0.459) 2px solid !important;
+}
+.project-card-list-item {
+    border: none !important;
+    font-size: 0.9rem;
+    background-color: transparent !important;
+    color: lightgray;
+}
+  
+.project-card-view {
+    box-shadow: 0 4px 5px 3px rgba(30, 28, 173, 0.459) !important;
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    transition: all 0.5s ease 0s !important;
+    height: 43vh !important;
+    width: 20vw !important;
+}
+.project-card-view:hover {
+    transform: scale(1.05) !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 4px 5px rgba(52, 49, 203, 0.561) !important;
+}
+
+.project-card-img {
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 10px !important;
+}
+
+.project-card-body {
+    padding: 20px !important;
+    text-align: center !important;
+    height: 100% !important;
+}
+
+.project-card-title {
+    font-size: 2.5rem !important;
+    font-weight: 500 !important;
+    color: white !important;
+    margin-bottom: 15px;
+}
+.project-card-text {
+    font-size: 0.95rem !important;
+    font-weight: 400 !important;
+    color: lightgray !important;
+    padding-bottom: 10px;
+    border-bottom: rgba(30, 28, 173, 0.459) 3px solid !important;
+}
+
+.project-card-btn {
+    font-size: 1.2rem !important;
+    font-weight: 400 !important;
+    color: white !important;
+    background-color: #181a95 !important;
+    border-color: #181a95 !important;
+}
+
+.project-btn-row {
+    padding-top: 10px;
+}
+
+.right {
+    float: left !important;
+}
+.left {
+    float: right !important;
+}
+
+.project-card-btn:hover {
+    background-color: #191cb4 !important;
+}
+
+.project-language-icon {
+    width: 22px !important;
+    height: 22px !important;
+    margin-right: 2px !important;
+    margin-left: 2px;
+}

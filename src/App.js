@@ -2,6 +2,7 @@ import React, { useState, useEffect, lazy, Suspense } from "react";
 import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar/Navbar.js";
 import Home from "./components/Home/Home";
+import Projects from "./components/Projects/Projects.js";
 import {
   BrowserRouter as Router,
   Route,
@@ -38,7 +39,8 @@ function App() {
                 <ScrollToTop />
                 <Routes>
                     <Route path="/" element={<Home />} />
-                </Routes>
+                    <Route path="/projects" element={<Projects />} />
+                 </Routes>
             </div>
             <Suspense fallback={<div>Loading...</div>}>
                 <Footer /> 
