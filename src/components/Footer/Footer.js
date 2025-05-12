@@ -5,6 +5,7 @@ import {
     AiOutlineHome,
     AiOutlineFundProjectionScreen,
     AiOutlineUser,
+    AiOutlineBulb,
   } from "react-icons/ai";
 import { IoLogoVercel } from "react-icons/io5";
 import "./Footer.css";
@@ -24,9 +25,10 @@ function Footer() {
             <Col md="5" className="footer-copyright">
                 <h2 className="social-title">Quick <span className="blue">Navigation</span></h2>
                 <br className="social-responsive"/>
-                <a href="#home" className="social-link quick-navigation"><AiOutlineHome className="social-icon"/>Home</a><br />
-                <a href="#about" className="social-link quick-navigation"><AiOutlineUser className="social-icon"/>About</a><br />
-                <a href="#socials" className="social-link quick-navigation"><AiOutlineFundProjectionScreen className="social-icon"/>Socials</a><br />
+                <a href="/#home" className="social-link quick-navigation"><AiOutlineHome className="social-icon"/>Home</a><br />
+                <a href="/#about" className="social-link quick-navigation"><AiOutlineUser className="social-icon"/>About</a><br />
+                <a href="/#socials" className="social-link quick-navigation"><AiOutlineFundProjectionScreen className="social-icon"/>Socials</a><br />
+                <a href="/projects" className="social-link quick-navigation"><AiOutlineBulb className="social-icon"/>Projects</a>
             </Col>
 
             <Col md="2" className="footer-copyright">

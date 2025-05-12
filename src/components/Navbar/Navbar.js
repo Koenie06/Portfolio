@@ -5,7 +5,8 @@ import Container from "react-bootstrap/Container";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
-  AiOutlineUser
+  AiOutlineUser,
+  AiOutlineBulb
 } from "react-icons/ai";
 import "./Navbar.css";
 
@@ -44,14 +45,14 @@ function NavBar() {
                 <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto" defaultActiveKey="#home">
                     <Nav.Item>
-                    <Nav.Link href="#home" onClick={() => updateExpanded(false)}>
+                    <Nav.Link href="/#home" onClick={() => updateExpanded(false)}>
                         <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
                     </Nav.Link>
                     </Nav.Item>
 
                     <Nav.Item>
                     <Nav.Link
-                        href="#about"
+                        href="/#about"
                         onClick={() => updateExpanded(false)}
                     >
                         <AiOutlineUser style={{ marginBottom: "2px" }} /> About
@@ -60,13 +61,25 @@ function NavBar() {
 
                     <Nav.Item>
                     <Nav.Link
-                        href="#socials"
+                        href="/#socials"
                         onClick={() => updateExpanded(false)}
                     >
                         <AiOutlineFundProjectionScreen
                         style={{ marginBottom: "2px" }}
                         />{" "}
                         Socials
+                    </Nav.Link>
+                    </Nav.Item>
+
+                    <Nav.Item>
+                    <Nav.Link
+                        href="/projects"
+                        onClick={() => updateExpanded(false)}
+                    >
+                        <AiOutlineBulb
+                        style={{ marginBottom: "2px" }}
+                        />{" "}
+                        Projects
                     </Nav.Link>
                     </Nav.Item>
                 </Nav>

@@ -3,7 +3,6 @@ import { Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import ListGroup from 'react-bootstrap/ListGroup';
-import img1 from "../../Assets/website.png";
 
 import {
     SiGithub,
@@ -13,7 +12,7 @@ function ProjectCards(props) {
     return (
         <Card className="project-card-view">
             <Card.Img 
-                src={img1}
+                src={props.imgPath}
                 alt="Card image" 
                 variant="top"
                 style={{ objectFit: 'cover' }}
@@ -24,6 +23,7 @@ function ProjectCards(props) {
             </ListGroup>
             <Card.Body className="project-card-body">
                 <Card.Title className="project-card-title">{props.title}</Card.Title>
+                <Card.Subtitle className="project-card-subtitle">{props.subtitle}</Card.Subtitle>
                 <Card.Text className="project-card-text">{props.description}</Card.Text>
                 {props.btnName && (
                     <Row className="project-btn-row">
