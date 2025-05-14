@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCards from "./ProjectCards";
 import './Projects.css';
-import { SiCss3, SiHtml5, SiJavascript, SiNpm, SiProgress, SiPython, SiReact } from "react-icons/si";
+import { SiCss3, SiHtml5, SiJavascript, SiNpm, SiPython, SiReact } from "react-icons/si";
 import { FiArrowRight, FiExternalLink } from "react-icons/fi";
 import { TbProgressAlert, TbProgressCheck } from "react-icons/tb";
 

@@ -18,6 +18,10 @@
     padding-bottom: 50px;
 }
 
+.icon-container {
+    padding-bottom: 30px;
+}
+
 .whois-header {
     font-size: 3em;
 }
@@ -31,6 +35,11 @@
 .tech-container {
     justify-content: center;
     padding-bottom: 50px;
+}
+
+.reveal-type,.reveal-container,.reveal-star {
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
 }
   
 .tech-icons {
@@ -100,7 +109,7 @@ p .about-title {
     align-items: center;
     margin-bottom: -20px;
 }
-  
+
 @media (max-width: 767px) {
     .about-img {
         padding-top: 0 !important;
