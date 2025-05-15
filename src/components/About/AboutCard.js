@@ -24,8 +24,8 @@ function AboutCard() {
             gsap.from(text.chars, {
                 scrollTrigger: {
                     trigger: char,
-                    start: 'top 45%',
-                    end: 'top 30%',
+                    start: 'top 55%',
+                    end: 'top 45%',
                     scrub: true,
                     markers: false,
                 },
@@ -48,36 +48,42 @@ function AboutCard() {
                     <br />
                     <br />
                 </p>
-                <div ref={main} className="reveal-type">
+                <div>
                     <div data-aos="custom-slide-right" data-aos-duration="600" data-aos-delay="100">
-                        <div className="icon-container">
-                            <FaGraduationCap className="graduation-icon" size={55} />
-                        </div>
-                        <br />
-
-                        <p>
-                            Currently studying <span className="blue">HBO-ICT</span> at <span className="blue">Hogeschool Utrecht</span>.<br />During my studies, I'm learning a wide range of <span className="blue">programming topics</span>, from <span className="blue">frontend development</span> to <span className="blue">backend systems</span> and <span className="blue"></span>everything in between.
+                        <div ref={main} className="reveal-type">
+                            <div className="icon-container">
+                                <FaGraduationCap className="graduation-icon" size={55} />
+                            </div>
                             <br />
-                        </p>
+
+                            <p>
+                                Currently studying <span className="blue">HBO-ICT</span> at <span className="blue">Hogeschool Utrecht</span>.<br />During my studies, I'm learning a wide range of <span className="blue">programming topics</span>, from <span className="blue">frontend development</span> to <span className="blue">backend systems</span> and <span className="blue"></span>everything in between.
+                                <br />
+                            </p>
+                        </div>
                     </div>
                     <div data-aos="custom-slide-left" data-aos-duration="600" data-aos-delay="100">
-                        <div className="icon-container">
-                            <FaLaptopCode className="graduation-icon" size={55} />
-                        </div>
-                        <br />
-                        <p>
-                            In my <span className="blue">free time</span>, I love working on personal <span className="blue">coding projects</span>. I enjoy coding in languages like <span className="blue">JavaScript</span>, <span className="blue">HTML</span>, <span className="blue">CSS</span>, and <span className="blue">Python</span>, and I often experiment with frameworks like <span className="blue">React</span>. I'm always curious to explore <span className="blue">new tools</span> and improve my skills through <span className="blue">hands-on practice</span>.
+                        <div ref={main} className="reveal-type">
+                            <div className="icon-container">
+                                <FaLaptopCode className="graduation-icon" size={55} />
+                            </div>
                             <br />
-                        </p>
+                            <p>
+                                In my <span className="blue">free time</span>, I love working on personal <span className="blue">coding projects</span>. I enjoy coding in languages like <span className="blue">JavaScript</span>, <span className="blue">HTML</span>, <span className="blue">CSS</span>, and <span className="blue">Python</span>, and I often experiment with frameworks like <span className="blue">React</span>. I'm always curious to explore <span className="blue">new tools</span> and improve my skills through <span className="blue">hands-on practice</span>.
+                                <br />
+                            </p>
+                        </div>
                     </div>
                     <div data-aos="custom-slide-right" data-aos-duration="600" data-aos-delay="100">
-                        <div className="icon-container">
-                            <FaGamepad className="graduation-icon" size={55} />
+                        <div ref={main} className="reveal-type">
+                            <div className="icon-container">
+                                <FaGamepad className="graduation-icon" size={55} />
+                            </div>
+                            <br />
+                            <p>
+                                Outside of <span className="blue">coding</span>, I like to <span className="blue">game with friends</span> and often <span className="blue">hang out</span> socially. Whether it's <span className="blue">online</span> or in <span className="blue">real life</span>, I enjoy <span className="blue">spending time with people</span> and <span className="blue">relaxing</span> after a day of <span className="blue">studying</span>.
+                            </p>
                         </div>
-                        <br />
-                        <p>
-                            Outside of <span className="blue">coding</span>, I like to <span className="blue">game with friends</span> and often <span className="blue">hang out</span> socially. Whether it's <span className="blue">online</span> or in <span className="blue">real life</span>, I enjoy <span className="blue">spending time with people</span> and <span className="blue">relaxing</span> after a day of <span className="blue">studying</span>.
-                        </p>
                     </div>
                 </div>
                 </blockquote>

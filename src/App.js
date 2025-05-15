@@ -25,14 +25,13 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, useGSAP);
 
 function App() {
 
-  const [load, updateLoad] = useState(true);
+    const [load, updateLoad] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-        updateLoad(false);
-        }, 100);
+        const handleLoad = () => updateLoad(false);
+        window.addEventListener('load', handleLoad);
 
-        return () => clearTimeout(timer);
+        return () => window.removeEventListener('load', handleLoad);
     }, []);
 
     const main = useRef();
@@ -40,7 +39,7 @@ function App() {
     useGSAP(
     () => {
         ScrollSmoother.create({
-            smooth: 1.5,
+            smooth: 2,
             effects: false,
         });
     },
@@ -56,7 +55,7 @@ function App() {
                     <Preloader load={load} />
 
                     <div className="App" id={load ? "no-scroll" : "scroll"}>
-                        <Particle />
+                        { !load && <Particle /> }
                         <ScrollToTop />
                         <Routes>
                             <Route path="/" element={<Home />} />

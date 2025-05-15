@@ -4,13 +4,7 @@ import Type from "./Type";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 import "./Home.css";
 
-import gsap from 'gsap';
-import { ScrollSmoother } from 'gsap/ScrollSmoother';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useGSAP } from '@gsap/react';
-
 const About = lazy(() => import('../About/About'));
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother, useGSAP);
 
 function Home() {
 
